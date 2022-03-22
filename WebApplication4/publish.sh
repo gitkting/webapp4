@@ -20,14 +20,15 @@ echo "**************** $appname publish end... ****************"
 #! /bin/bash
 appname="webapp4"
 echo "${appname} publish start..." 
-echo "delete project folder: /home/kting/$appname ..."
-#rm -rf /home/kting/$appname
-echo "create project folder: /home/kting/$appname ..."
-#mkdir /home/kting/$appname
+echo "delete project folder: /home/kting/sourcecode/$appname ..."
+rm -rf /home/kting/sourcecode/$appname
+echo "create project folder: /home/kting/sourcecode/$appname ..."
+mkdir /home/kting/sourcecode/$appname
+cd /home/kting/sourcecode
 echo "pull project code from  ..."
-#git svn  clone https:/home/admin/my/code/gas
-#git svn clone  https://www./home/admin/my/code
-#cd /home/admin/my/code
+#root@DESKTOP-GGG9TD9:/home/kting/sourcecode# git clone git@github.com:gitkting/webapp4.git
+#git it clone git@github.com:gitkting/webapp4.git 
+git pull git@github.com:gitkting/webapp4.git 
 #git svn rebase
 echo " run dotnet build ..."
 #dotnet restore /home/admin/my/code
