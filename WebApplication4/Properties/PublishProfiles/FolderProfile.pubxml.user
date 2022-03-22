@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\ProjectTest\kting\WebApplication4\bin\Release\net5.0\publish\</_PublishTargetUrl>
+    <History>True|2022-03-17T08:59:18.0548111Z;True|2022-03-17T15:04:18.1987469+08:00;True|2022-03-17T14:47:51.9225214+08:00;True|2022-03-17T14:33:50.0561654+08:00;True|2022-03-16T17:26:41.0937871+08:00;True|2022-03-16T17:23:18.4562372+08:00;True|2022-03-03T16:23:15.9167743+08:00;True|2022-03-03T16:08:03.5031760+08:00;True|2022-03-03T10:45:49.1241249+08:00;True|2022-03-03T10:28:19.5425872+08:00;True|2022-03-03T10:18:23.8627641+08:00;True|2022-03-03T10:02:08.0181811+08:00;True|2022-03-03T09:49:29.9136999+08:00;</History>
+  </PropertyGroup>
+</Project>
