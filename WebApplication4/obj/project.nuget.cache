@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eBECMnt8YfzepNxDKHQ5tWyrKaimoVNWrAdmFwEcmn+O+i0jIYSYIy47+KlRw8BL6/ELw6MveIXxGRTnOb9osw==",
+  "dgSpecHash": "C5nWgrCfL75YtnS3tC8WHrkjcubqJaDTdHwYLggfKQWLbN8HA1wLeCdSR4xvACfj+7uJ1jSkHECR8wwAhxdt6Q==",
   "success": true,
-  "projectFilePath": "C:\\ProjectTest\\kting\\WebApplication4\\WebApplication4.csproj",
+  "projectFilePath": "C:\\ProjectTest\\aspn\\WebApplication4\\WebApplication4.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.11.1\\microsoft.visualstudio.azure.containers.tools.targets.1.11.1.nupkg.sha512"
   ],

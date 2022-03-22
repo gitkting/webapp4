@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ProjectTest\\kting\\WebApplication4\\WebApplication4.csproj": {}
+    "C:\\ProjectTest\\aspn\\WebApplication4\\WebApplication4.csproj": {}
   },
   "projects": {
-    "C:\\ProjectTest\\kting\\WebApplication4\\WebApplication4.csproj": {
+    "C:\\ProjectTest\\aspn\\WebApplication4\\WebApplication4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ProjectTest\\kting\\WebApplication4\\WebApplication4.csproj",
+        "projectUniqueName": "C:\\ProjectTest\\aspn\\WebApplication4\\WebApplication4.csproj",
         "projectName": "WebApplication4",
-        "projectPath": "C:\\ProjectTest\\kting\\WebApplication4\\WebApplication4.csproj",
+        "projectPath": "C:\\ProjectTest\\aspn\\WebApplication4\\WebApplication4.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\ProjectTest\\kting\\WebApplication4\\obj\\",
+        "outputPath": "C:\\ProjectTest\\aspn\\WebApplication4\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
