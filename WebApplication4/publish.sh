@@ -20,21 +20,24 @@ echo "**************** $appname publish end... ****************"
 #! /bin/bash
 appname="webapp4"
 echo "${appname} publish start..." 
-echo "delete project folder: /home/kting/sourcecode/$appname ..."
-rm -rf /home/kting/sourcecode/$appname
-echo "create project folder: /home/kting/sourcecode/$appname ..."
-mkdir /home/kting/sourcecode/$appname
-cd /home/kting/sourcecode
+#echo "delete project folder: /home/kting/sourcecode/$appname ..."
+#rm -rf /home/kting/sourcecode/$appname
+#echo "create project folder: /home/kting/sourcecode/$appname ..."
+#mkdir /home/kting/sourcecode/$appname
+cd /home/kting/sourcecode/$appname
 echo "pull project code from  ..."
 #root@DESKTOP-GGG9TD9:/home/kting/sourcecode# git clone git@github.com:gitkting/webapp4.git
+#root@DESKTOP-GGG9TD9:/home/kting/sourcecode/webapp4# git pull git@github.com:gitkting/webapp4.git
 #git it clone git@github.com:gitkting/webapp4.git 
 git pull git@github.com:gitkting/webapp4.git 
 #git svn rebase
 echo " run dotnet build ..."
+cd /
 #dotnet restore /home/admin/my/code
-#dotnet build /home/admin/my/code
+dotnet build /home/kting/sourcecode/$appname
 echo " run dotnet publish ..."
 #dotnet publish /home/admin/my/code  -o /home/admin/my/code/publish
+dotnet publish /home/kting/sourcecode/$appname
 echo "get old container id ..."
 CID=$(docker ps |grep "doc-$appname" |awk '{print $1}')
 echo $CID
