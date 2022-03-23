@@ -58,8 +58,8 @@ fi
 
 echo "create docker images ..."
 #docker build -t img-webapp0 .
-docker build -t img-$appname /home/kting/$appname 
-
+#docker build -t img-$appname /home/kting/sourcecode/$appname 
+docker build -t img-$appname /home/kting/sourcecode/webapp4/WebApplication4/bin/Release/net5.0/publish
 sleep 10
 echo "create docker container ..."
 #docker rm -f doc-$appname 
