@@ -1,23 +1,4 @@
-﻿#! /bin/bash
-player1=xiaoming # define a player1
-player2=ken 
-appname=webapp4
-echo "**************** $appname publish start... ****************" 
-echo "git pull"
-echo "dotnet build"
-echo "docker build"
-#docker build -t img-webapp0 .
-docker build -t img-$appname /home/kting/$appname
-echo "docker run"
-docker rm -f doc-$appname 
-#docker run --name doc-webapp0 -p 8588:8587 -d img-webapp0 
-docker run -it --name doc-$appname -p 8588:8587 --mount type=bind,source=/opt/data,target=/home/kting -d img-$appname:latest
-echo "**************** $appname publish end... ****************"
-
-
-
-
-#! /bin/bash
+﻿ #! /bin/bash
 appname="webapp4"
 echo "${appname} publish start..." 
 #echo "delete project folder: /home/kting/sourcecode/$appname ..."
@@ -58,7 +39,6 @@ fi
 
 echo "create docker images ..."
 #docker build -t img-webapp0 .
-#docker build -t img-$appname /home/kting/sourcecode/$appname 
 docker build -t img-$appname /home/kting/sourcecode/webapp4/WebApplication4/bin/Debug/net5.0/publish
 sleep 10
 echo "create docker container ..."
