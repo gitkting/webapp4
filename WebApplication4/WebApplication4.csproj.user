@@ -6,5 +6,6 @@
   <PropertyGroup>
     <ActiveDebugProfile>WebApplication4</ActiveDebugProfile>
     <NameOfLastUsedPublishProfile>C:\ProjectTest\kting\WebApplication4\Properties\PublishProfiles\FolderProfile.pubxml</NameOfLastUsedPublishProfile>
+    <ShowAllFiles>true</ShowAllFiles>
   </PropertyGroup>
 </Project>
