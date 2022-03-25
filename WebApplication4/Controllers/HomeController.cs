@@ -28,7 +28,7 @@ namespace WebApplication4.Controllers
             using (StreamWriter sw = new StreamWriter(Response.Body))
             {
                 //
-                sw.WriteAsync("ktingsssss111yeyeyeyeyey oh yeah,haha whats rong!33333344445555566666777777777" + file.FullName + file.Length + file.LastAccessTime);  
+                sw.WriteAsync("hi kting" + file.FullName + file.Length + file.LastAccessTime);  
             }
 
             return new EmptyResult();
