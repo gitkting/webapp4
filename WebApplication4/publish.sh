@@ -10,7 +10,8 @@ echo "pull project code from  ..."
 #root@DESKTOP-GGG9TD9:/home/kting/sourcecode# git clone git@github.com:gitkting/webapp4.git
 #root@DESKTOP-GGG9TD9:/home/kting/sourcecode/webapp4# git pull git@github.com:gitkting/webapp4.git
 #git it clone git@github.com:gitkting/webapp4.git 
-git pull git@github.com:gitkting/webapp4.git 
+#git pull git@github.com:gitkting/webapp4.git
+git pull https://github.com/gitkting/webapp4.git
 #git svn rebase
 echo " run dotnet build ..."
 cd /
