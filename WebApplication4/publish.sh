@@ -1,5 +1,6 @@
 ﻿#! /bin/bash
 appname="webapp4"
+sourceFolder= "/home/kting/sourcecode/$appname/"
 echo "**************** ${appname} publish start ***************."
 echo "...............create folder ................"
 #echo "delete project folder: /home/kting/sourcecode/$appname ..."
@@ -7,13 +8,22 @@ echo "...............create folder ................"
 #echo "create project folder: /home/kting/sourcecode/$appname ..."
 #mkdir /home/kting/sourcecode/$appname
 echo "...............git pull sourcecode ................"
-cd /home/kting/sourcecode/$appname
+# -d 参数判断 $sourceFolder 是否存在
+#判断文件夹是否存在 -d
+if [[ ! -d "$sourceFolder" ]]; then
+  cd /home/kting/sourcecode
+  git clone https://github.com/gitkting/webapp4.git
+else
+  cd /home/kting/sourcecode/$appname
+  git pull https://github.com/gitkting/webapp4.git
+fi
+ 
 echo "pull project code from  ..."
 #root@DESKTOP-GGG9TD9:/home/kting/sourcecode# git clone git@github.com:gitkting/webapp4.git
 #root@DESKTOP-GGG9TD9:/home/kting/sourcecode/webapp4# git pull git@github.com:gitkting/webapp4.git
 #git it clone git@github.com:gitkting/webapp4.git
 #git pull git@github.com:gitkting/webapp4.git
-git pull https://github.com/gitkting/webapp4.git
+#git pull https://github.com/gitkting/webapp4.git
 #git svn rebase
 echo "...............dotnet build ...................."
 cd /
