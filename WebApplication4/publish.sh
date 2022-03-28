@@ -1,6 +1,6 @@
 ﻿#! /bin/bash
 appname="webapp4"
-sourceFolder= "/home/kting/sourcecode/$appname/"
+#sourceFolder= "/home/kting/sourcecode/$appname/"
 echo "**************** ${appname} publish start ***************."
 echo "...............create folder ................"
 #echo "delete project folder: /home/kting/sourcecode/$appname ..."
@@ -10,7 +10,7 @@ echo "...............create folder ................"
 echo "...............git pull sourcecode ................"
 # -d 参数判断 $sourceFolder 是否存在
 #判断文件夹是否存在 -d
-if [[ ! -d "$sourceFolder" ]]; then
+if [ ! -d "/home/kting/sourcecode/webapp4/"]; then
   cd /home/kting/sourcecode
   git clone https://github.com/gitkting/webapp4.git
 else
